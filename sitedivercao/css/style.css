@@ -21,7 +21,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    min-width: 100%;
+    min-width: 75%;
     height: 32rem;
 }
 
@@ -36,4 +36,9 @@
         font-size: 1.25rem;
         line-height: 1.4;
     }
+}
+/* MY CSS
+-------------------------------------------------- */
+.card-img-top {
+    /* COLOQUE AQUI A ALTURA QUE DESEJA */
 }
