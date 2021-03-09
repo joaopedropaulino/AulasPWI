@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <title>Site-DIversão</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    .card {
+      margin-top: 20px;
+    }
+
+    .container-md {
+      width: 1000px;
+      margin-left: 80px;
+      font-size: 30px;
+      border-top-left-radius: 35px;
+      border-bottom-right-radius: 35px;
+    }
+
+
+    #filme {
+      background-color: #FA8072;
+      color: #ff0000;
+    }
+
+    #Series {
+      background-color: #61f54ecb;
+      color: #1b9104;
+
+    }
+
+    #anime {
+      background-color: #00e1ff;
+      color: #002088;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/senhor dos paineis.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="subt">Senhor dos aneis</h5>
+          <p class="subsub">Uma aventura epica em um muno enorme de RPG</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/bruxo.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="subt">The witcher</h5>
+          <p class="subsub">Diretamente do jogos uma aventura com geralt de rivia</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/pirata que estica.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="subt">One piece</h5>
+          <p class="subsub">Um anime com muitos episodios para quem gosta</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!--FIM CARROSSEL-->
+
+  <script src="js/script.js"></script>
+  <div class="temas">
+    <h5 style="text-align: center;">Temas: </h5>
+    <button type="button" class="btn btn-primary" id="fundoPrimary">Fundo Primary</button>
+    <button type="button" class="btn btn-secondary" id="fundoSecondary">Fundo Secondary</button>
+    <button type="button" class="btn btn-success" id="fundoSuccess">Fundo Success</button>
+    <button type="button" class="btn btn-danger" id="fundoDanger">Fundo Danger</button>
+    <button type="button" class="btn btn-warning" id="fundoWarning">Fundo Warning</button>
+    <button type="button" class="btn btn-info" id="fundoInfo">Fundo Info</button>
+    <button type="button" class="btn btn-light" id="fundoLight">Fundo Light</button>
+    <button type="button" class="btn btn-dark" id="fundoDark">Fundo Dark</button>
+    <button type="button" class="btn btn-outline-info" id="semFundo">Remover Fundo</button>
+  </div>
+  <div class="alert alert-success font-weight-bold d-flex justify-content-around" role="alert">
+    <p>Filmes</p>
+    <button type="button" class="btn btn-outline-danger" id="EsconderFilmes">Esconder Conteúdo</button>
+    <button type="button" class="btn btn-outline-dark " id="MostrarFilmes">Mostrar Filmes</button>
+  </div>
+  <div class="row" id="dosFilmes">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/macaco do inferno.jpg" class="card-img-top" alt="Imagem do hellboy">
+        <div class="card-body">
+          <h5 class="card-title">Hellboy</h5>
+          <p class="card-text">
+           o proprio filho do diabo vem a terra caçar monstros.
+          </p>
+          <br>
+          <div class="row ">
+            <div class="col-md-6">
+              <a href="#" class="btn btn-primary">Ver</a>
+            </div>
+            <div class="col-md-6">
+              <p class="text-muted time">2h02</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/mamaco.jpg" class="card-img-top" alt="Imagem do soldado">
+        <div class="card-body">
+          <h5 class="card-title">Ate o ultimo homem</h5>
+          <p class="card-text">
+            um soldado religioso,que combinação diferente
+          </p>
+          <br>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="#" class="btn btn-primary">Ver</a>
+            </div>
+            <div class="col-md-6">
+              <p class="text-muted time">2h 19m</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/ograo.jpg" class="card-img-top" alt="Imagem do filme warcraft">
+        <div class="card-body">
+          <h5 class="card-title">warcraft</h5>
+          <p class="card-text">
+            um filme direto do video games para sua telinha
+          </p>
+          <br><br>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="#" class="btn btn-primary">Ver</a>
+            </div>
+            <div class="col-md-6">
+              <p class="text-muted time">2h03m</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="alert alert-secondary font-weight-bold d-flex justify-content-around mt-5" role="alert">
+    <p class="central">Séries</p>
+    <button type="button" class="btn btn-outline-danger" id="EsconderSerie">Esconder Séries</button>
+    <button type="button" class="btn btn-outline-dark" id="MostrarSerie">Mostrar Séries</button>
+  </div>
+  <div class="row" id="dasSeries">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/mamco.jpg" class="card-img-top" alt="Imagem da Série dr.house">
+        <div class="card-body">
+          <h5 class="card-title">dr.house</h5>
+          <p class="card-text">
+            um medico muito egocentrico egoista,tambem é manco
+          </p>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="#" class="btn btn-primary">Ver</a>
+            </div>
+            <div class="col-md-6">
+              <p class="text-muted time">8 Temporadas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/cherado.jpg" class="card-img-top" alt="Imagem da Série breaking bed">
+        <div class="card-body">
+          <h5 class="card-title">breaking bed</h5>
+          <p class="card-text">
+            um ex professor de quimica trafica drogas para viciados
+          </p>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="#" class="btn btn-primary">Ver</a>
+            </div>
+            <div class="col-md-6">
+              <p class="text-muted time">5 Temporadas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/ladrao.jpg" class="card-img-top" alt="Imagem da la casa de papel">
+        <div class="card-body">
+          <h5 class="card-title">la casa de papel</h5>
+          <p class="card-text">
+           um "professor"planeja roubar o banco da espanha
+          </p>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="#" class="btn btn-primary">Ver</a>
+            </div>
+            <div class="col-md-6">
+              <p class="text-muted time">4 Temporadas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="alert alert-primary font-weight-bold d-flex justify-content-around mt-5" role="alert">
+    <p class="central">Animes</p>
+    <button type="button" class="btn btn-outline-danger" id="EsconderAnimes">Esconder Animes</button>
+    <button type="button" class="btn btn-outline-dark" id="MostrarAnimes">Mostrar Animes</button>
+  </div>
+  <div class="row" id="dosAnimes">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/bolas do dragao.jpg" class="card-img-top" alt="Imagem do Anime dragon ball">
+        <div class="card-body">
+          <h5 class="card-title">dragon ball</h5>
+          <p class="card-text">
+            guerreiros que saiem na pancada
+          </p>
+          <br><br>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="#" class="btn btn-primary">Ver</a>
+            </div>
+            <div class="col-md-6">
+              <p class="text-muted time"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/gadao de ouro.jpg" class="card-img-top" alt="Imagem de cavaleiros do zodiaco">
+        <div class="card-body">
+          <h5 class="card-title">cavaleiros do zodiaco</h5>
+          <p class="card-text">
+          um grupo de combatentes que defente a deusa atena 
+          </p>
+          <br>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="#" class="btn btn-primary">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/muleque sem pai.jpg" class="card-img-top" alt="hunter x hunter ">
+        <div class="card-body">
+          <h5 class="card-title">hunter x hunter</h5>
+          <p class="card-text">
+           um moleque sem pai que e forte
+          </p>
+          <br>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="#" class="btn btn-primary">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <br><br>
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="nome">Nome: </label>
+        <input type="text" class="form-control" id="nome">
+      </div>
+      <div class="form-group">
+        <label for="email">E-Mail: </label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+        <label for="mensagem">Mensagem: </label>
+        <textarea class="form-control" id="mensagem"></textarea>
+      </div>
+      <button type="button" class="btn btn-primary" id="enviar">Enviar</button>
+    </form>
+  </div>
+
+  <script src="https://kit.fontawesome.com/aab555f963.js" crossorigin="anonymous"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
